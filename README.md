@@ -5,12 +5,12 @@
 
 Add the service provider to the `config/app.php` provider array
 ```php
-MScharl\LaravelStaticHtmlCache\Provider\LaravelStaticHtmlCacheProvider::class,
+vnclone\LaravelStaticHtmlCache\Provider\LaravelStaticHtmlCacheProvider::class,
 ```
 Then add the middleware to the end of your `Http/Kernel.php` middleware array.
  ```php
 protected $middleware = [
-    \MScharl\LaravelStaticHtmlCache\Http\Middleware\LaravelStaticHtmlCacheMiddleware::class,
+    \vnclone\LaravelStaticHtmlCache\Http\Middleware\LaravelStaticHtmlCacheMiddleware::class,
 ];
 ```
 
